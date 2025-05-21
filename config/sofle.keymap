@@ -26,8 +26,8 @@
             >;
 
             sensor-bindings =
-                <&left_right_scroll MOVE_X(5) MOVE_X(-5)>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&inc_dec_kp SCRL_LEFT SCRL_RIGHT>,
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         low {
