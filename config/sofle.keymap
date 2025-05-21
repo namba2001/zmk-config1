@@ -11,7 +11,14 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
+        scrl: scrl {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCRL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+        };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -26,7 +33,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp SCRL_LEFT SCRL_RIGHT>,
+                <&scrl>,
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
@@ -45,7 +52,7 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &kp UP        &trans        &trans       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT      &kp DOWN      &kp RIGHT     &trans       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &kp K_CUT     &kp K_COPY    &kp K_PASTE  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &kp LC(X)     &kp LC(C)     &kp LC(V)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                       &trans        &trans        &trans       &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
