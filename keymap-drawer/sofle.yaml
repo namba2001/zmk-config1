@@ -1,66 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  base:
-  - Esc
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - BACKSPACE
-  - ↹
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - Caps Lock
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - BT NXT
-  - MUTE
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - low
-  - ␣
-  - ENTER
-  - {t: high, h: toggle}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  base: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, '[', Caps Lock, A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, V, B, BT NXT, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$',
+    low, ␣, ENTER, high, '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$']
   low:
   - {t: ▽, type: trans}
   - F1
@@ -124,9 +66,9 @@ layers:
   - {t: ▽, type: trans}
   high:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT 1
+  - BT 2
+  - BT 3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,7 +121,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
